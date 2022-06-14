@@ -1,6 +1,11 @@
+"""
+This code is answer to 'https://quera.org/problemset/145008/'
+passed: 100%
+"""
+
 from pprint import pprint
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     plates_count = int(input())
     sf_string = input()

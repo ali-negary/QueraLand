@@ -1,3 +1,8 @@
+"""
+This code is answer to 'https://quera.org/problemset/145009/'
+passed: 55%
+"""
+
 from copy import deepcopy
 
 if __name__ == "__main__":
