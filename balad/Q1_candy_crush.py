@@ -1,3 +1,24 @@
+"""
+Candy Crush.
+In the first line an integer 'n' will be given which indicate that
+in the next n lines there will be n row of n numbers (n^2 total).
+The output should be all the n numbers in order of sub-diameter of the
+matrix.
+
+sample input:
+4
+1 6 3 10
+2 5 9 13
+4 8 12 15
+7 11 14 16
+
+accepted output:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+passed: 100%
+"""
+
+
 def get_number_of_iterations(n):
     number_list = {1: 1, 2: 3}
     for i in range(1, n):
@@ -20,7 +41,7 @@ def re_order_main(list_of_lists):
     return final_list
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     row_col_count = int(input())
     numbers = [input().split() for i in range(row_col_count)]
 
