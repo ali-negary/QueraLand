@@ -1,6 +1,6 @@
 """
 Candy Crush.
-In the first line an integer 'n' will be given which indicate that
+In the first line an integer 'n' will be given which indicates that
 in the next n lines there will be n row of n numbers (n^2 total).
 The output should be all the n numbers in order of sub-diameter of the
 matrix.
@@ -19,14 +19,14 @@ passed: 100%
 """
 
 
-def get_number_of_iterations(n):
+def get_number_of_iterations(n) -> int:
     number_list = {1: 1, 2: 3}
     for i in range(1, n):
         number_list[i + 2] = 2 * i + 3
     return number_list[n]
 
 
-def re_order_main(list_of_lists):
+def re_order_main(list_of_lists) -> list:
     iterations = get_number_of_iterations(len(list_of_lists))
     numbers_list = {}
     for i in range(len(list_of_lists)):
